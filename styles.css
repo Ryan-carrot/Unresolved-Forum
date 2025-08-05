@@ -1,0 +1,434 @@
+/*Global Styles*/
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.desktop-nav ul, .social-nav ul, .footer-nav ul, .mobile-nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+:root {
+    --main-black: #000000;
+    --main-white: #ffffff;
+    --border-radius: 10px;
+    --transition: 0.3s;
+}
+
+/*Desktop nav*/
+#desktop-logo img {
+    width: 24rem;
+    height: auto;
+}
+
+.header-content {
+    position: fixed;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 6rem;
+    width: 100%;
+    align-content: center;
+    background-color: var(--main-white);
+    opacity: 90%;
+    overflow: hidden;
+}
+
+.desktop-nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+.desktop-nav ul {
+    gap: 1.75rem;
+    padding-top: 0.25rem;
+    padding-left: 4rem;
+}
+
+.desktop-nav li {
+    padding: 0.5rem;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+
+a.about, a.team, a.forums, a.services {
+    display: flex;
+    text-decoration: none;
+    color: var(--main-black);
+    border: 1px solid var(--main-black);
+    border-radius: var(--border-radius);
+    padding: 0.4rem;
+    transition: var(--transition);
+}
+
+a.about:hover, a.team:hover, a.forums:hover, a.services:hover {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
+.social-nav {
+    display: inline-flex;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.social-nav ul {
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.social-nav img {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.instagram img, .facebook img, .twitter img {
+    width: 2rem;
+    height: 2rem;
+    transition: .5s;
+}
+
+.instagram img:hover, .facebook img:hover, .twitter img:hover {
+    transform: scale(1.5);
+}
+
+/*Desktop Main Content*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Resources/software-developer-6521720_1920.jpg");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    width: 100%;
+    margin: 0;
+    opacity: 85%;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mission h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3rem 0 3rem 0;
+}
+
+/*Desktop Founder section*/
+.founder {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+
+.founder img {
+    height: auto;
+    width: 15%;
+    border-radius: 30rem;
+    margin: 0 3rem 0 3rem;
+}
+
+.founder p {
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    word-spacing: 0.5rem;
+    margin: 0 3rem 0 3rem;
+}
+
+/*Desktop Team section*/
+.team-container h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(./Resources/umberto-jXd2FSvcRr8-unsplash.jpg);
+    height: 50vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.team-details {
+    background: rgba(0, 0, 0, 0.9);
+    color: var(--main-white);
+    width: 40%;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.team-member img {
+    height: auto;
+    width: 30%;
+    border-radius: 30rem;
+}
+
+/*Desktop Forum preview section*/
+.forum-preview h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.post-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 2.5rem;
+    margin: auto 15rem;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.post-list > div {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f7f5f5;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 5px #292828;
+    transition: .1s;
+}
+
+.post-1:hover, .post-2:hover, .post-3:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+/*Desktop Footer*/
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    margin-top: 2rem;
+}
+
+.footer-nav ul{
+    gap: 1rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.footer-contact h5 {
+    margin-top: 1rem;
+}
+
+
+/*Mobile styles*/
+
+/*Mobile nav section*/
+/*Hide mobile nav and top nav when over 1124px*/
+@media only screen and (min-width: 1125px) {
+    .mobile-nav, .topnav {
+        display: none;
+    }
+}
+
+/*Hide desktop nav and style when under 1124px*/
+@media only screen and (max-width: 1124px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .mobile-nav ul {
+        padding-left: 0;
+    }
+
+    .mobile-nav li {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .mobile-services img, .mobile-about img, .mobile-team img, .mobile-forums img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/*Hide .topnav mobile nav when over 478*/
+@media only screen and (min-width: 478px) {
+    .topnav {
+        display: none;
+    } 
+}
+
+/*Hide all navs except .topnav mobile when under 477px*/
+@media only screen and (max-width: 477px) {
+    .mobile-nav, .social-nav, .header-content {
+        display: none;
+    }
+
+    .topnav {
+        overflow: hidden;
+        z-index: 5;
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+    }
+  
+    .topnav #myLinks {
+        display: none;
+    }
+  
+    .topnav a {
+        color: var(--main-white);
+        padding: 0.875rem 1rem;
+        text-decoration: none;
+        font-size: 1.063rem;
+        display: block;
+    }
+
+    a.facebook, a.instagram, a.twitter {
+        display: inline-block;
+        grid-template-columns: 1fr 1fr;
+        color: var(--main-white);
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+  
+    .topnav a.icon {
+        background: var(--main-black);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  
+    .topnav a:hover {
+        background-color: #ddd;
+        color: var(--main-black);
+    }
+  
+    .active {
+        background-color: var(--main-black);
+        color: var(--main-white);
+    }
+}
+
+/*Mobile styles - Founder, team, posts, footer*/
+@media only screen and (max-width: 1046px) {
+    .founder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .founder img {
+        width: 15rem;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .founder p {
+        text-align: left;
+    }
+    
+    .team-list {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .team-member {
+        margin: 1rem 0;
+    }
+
+    .team-member img {
+        width: 30%;
+        height: auto;
+    }
+
+    .team-details {
+        width: 30%;
+    }
+    
+    .post-container {
+        flex-direction: column;
+        margin: auto 2rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0
+    }
+
+    .footer-nav a {
+        padding: 0.5rem;
+    }
+}
+
+/*Slightly adjust team details width for smaller screens*/
+@media only screen and (max-width: 768px) {
+    .team-details {
+        width: 60%;
+    }
+}
+
+/*Slightly adjust founder image and text for smaller screens*/
+@media only screen and (max-width: 430px) {
+    .founder img {
+        width: 55%;
+        height: auto;
+    }
+
+    .founder p {
+        text-align: left;
+    }
+}
