@@ -33,19 +33,19 @@ We’ve all been there—Googling a weird error message only to find dead-ends, 
 
 ### Desktop View
 
-![Unresolved Forum Desktop](/mnt/data/Unresolved-Forum-desktop.png)
+<img width="1918" height="918" alt="Unresolved-Forum-desktop" src="https://github.com/user-attachments/assets/c9e01ae9-73e8-4015-8cc1-767893027e99" />
 
 ### Mobile View
 
-![Unresolved Forum Mobile](/mnt/data/Unresolved-Forum-mobile.png)
+<img width="577" height="914" alt="Unresolved-Forum-mobile" src="https://github.com/user-attachments/assets/80bb261d-c3d4-4951-aa80-62b7b614fbd0" />
 
 ### Mobile Menu
 
-![Unresolved Forum Mobile Menu](/mnt/data/Unresolved-Forum-mobile-menu.png)
+<img width="551" height="912" alt="Unresolved-Forum-mobile-menu" src="https://github.com/user-attachments/assets/27a78e2c-2218-40c6-9808-d142ed4ba014" />
 
 ### Tablet View
 
-![Unresolved Forum Tablet](/mnt/data/Unresolved-Forum-tablet.png)
+<img width="652" height="821" alt="Unresolved-Forum-tablet" src="https://github.com/user-attachments/assets/74bb2e6e-efb2-4e5c-8a64-5b505ff22a17" />
 
 ---
 
