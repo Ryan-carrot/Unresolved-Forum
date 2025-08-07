@@ -316,7 +316,15 @@ a.about:hover, a.team:hover, a.forums:hover, a.services:hover {
     }
   
     .topnav #myLinks {
-        display: none;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    .topnav #myLinks.show {
+        max-height: 500px; /* adjust as needed */
+        opacity: 1;
     }
   
     .topnav a {
